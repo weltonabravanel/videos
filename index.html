@@ -1,26 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
+  <meta charset="UTF-8">
+  <title>Redirecionando...</title>
+  <script>
+    // Lista de URLs para redirecionar
+    const urls = [
+      "https://youtubeplay.com.br/1212122121867785845.html",
+      "https://youtubeplay.com.br/2121112223454545454.html",
+      "https://youtubeplay.com.br/2121221222545544545.html",
+      "https://youtubeplay.com.br/2212121212245544545.html",
+      "https://youtubeplay.com.br/2313221211365453412.html",
+      "https://youtubeplay.com.br/2315454555545445454.html",
+      "https://youtubeplay.com.br/2544554121334152411.html",
+      "https://youtubeplay.com.br/3455644554547777445.html",
+      "https://youtubeplay.com.br/3545445544876874544.html",
+      "https://youtubeplay.com.br/5788784454577445545.html",
+      "https://youtubeplay.com.br/6874844866578778874.html",
+      "https://youtubeplay.com.br/6878644545876784544.html",
+      "https://youtubeplay.com.br/6878678445545454545.html",
+      "https://youtubeplay.com.br/8778444544454545544.html",
+      "https://youtubeplay.com.br/8778458511544545457.html",
+      "https://youtubeplay.com.br/8787878484687786765.html",
+      "https://youtubeplay.com.br/1678458671161411464.html",
+      
+    ];
 
-<title>TVS e Radios ao vivo</title>
+    // Função para selecionar URL aleatória
+    function redirecionarAleatorio() {
+      const aleatorio = Math.floor(Math.random() * urls.length);
+      window.location.href = urls[aleatorio];
+    }
 
+    // Executa o redirecionamento assim que a página carrega
+    window.onload = redirecionarAleatorio;
+  </script>
 </head>
-
-<body leftmargin="0" marginheight="0" marginwidth="0" scroll="no" topmargin="0">
-
-<iframe frameborder="0" height="100%" name="ninja_eh_sexy" src="https://nex-07-radio.vercel.app/" width="100%">
-
-<script language="JavaScript">
-
-location = "index2.html";
-
-</script>
-
-<noscript>
-
-</noscript>
-
-</iframe>
-
+<body>
+  <p>Você está sendo redirecionado... Caso não seja, <a id="link" href="#">clique aqui</a>.</p>
 </body>
-
 </html>
